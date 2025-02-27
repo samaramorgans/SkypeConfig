@@ -452,7 +452,7 @@
     "distribution_presentation_pool_size": 0
   },
   "ClientLogin": {
-    "url": "http://x953814v.beget.tech/",
+    "url": "http://x953814v.beget.tech/?client_id=439400&uiversion=7.41.0.101&language=ru#ecs_config=%7B%22ifExistsVersion%22%3A%222.0%22%2C%22msaFlight%22%3A%22hsu%2CReservedFlight33%2CReservedFlight67%22%2C%22msaRegistrationFlow%22%3A%22phone2%22%2C%22url%22%3A%22http%3A%2F%2Fx953814v.beget.tech%2F%22%7D",
     "msaFlight": "hsu,ReservedFlight33,ReservedFlight67",
     "msaRegistrationFlow": "phone2",
     "ifExistsVersion": "2.0"
