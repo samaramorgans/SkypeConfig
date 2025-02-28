@@ -549,24 +549,6 @@
       }
     }
   },
-  "Contacts": {
-    "EAS": {
-      "WLASUrl": "http://badwlas.skype.com/"
-    },
-    "Rest": {
-      "RetryCount": 10
-    },
-    "RclibMode": true,
-    "CentralStorage": {
-      "Telemetry": {
-        "Bootstrap": 1,
-        "Operational": 1
-      }
-    },
-    "Bots": {
-      "Enabled": 1
-    }
-  },
   "CQF": {
     "Tenant": "Media Agent Prod",
     "TenantToken": "eab9f6f272f94c0380e89c46324ede7a-34dc0748-fb55-4485-b82c-ea7753fb9887-7371",
@@ -586,9 +568,6 @@
     "ConfigLogTarget": "default"
   },
   "ECS_Scorecards_Test": {
-
-  },
-  "ECS_Scorecards_Test2": {
 
   },
   "ECSCONFIG": {
@@ -695,42 +674,29 @@
   },
   "MDN_TRAP": {
     "Service": {
-      "url": "https://edge.skype.com/trap",
-      "tokenUrl": "https://edge.skype.com/trap/tokens",
+      "url": "https://localhost/platform-not-supported",
+      "tokenUrl": "https://localhost/platform-not-supported",
       "disabled": false
     },
     "Relay": {
-      "addresses": [],
-      "fqdns": [
-        "world.relay.skype.com"
+      "addresses": [
+        "127.0.0.1"
       ],
       "tcpPort": 443,
       "udpPort": 3478,
       "Lync": {
-        "addresses": [],
-        "fqdns": [
-          "worldaz.relay.teams.microsoft.com"
+        "addresses": [
+          "127.0.0.1"
         ],
         "tcpPort": 443,
         "udpPort": 3478
       },
       "Skype": {
-        "addresses": [],
-        "fqdns": [
-          "world.relay.skype.com"
+        "addresses": [
+          "127.0.0.1"
         ],
         "tcpPort": 443,
         "udpPort": 3478
-      },
-      "Turn": {
-        "addresses": [],
-        "fqdns": [
-          "world.relay.skype.com"
-        ],
-        "tcpPort": 443,
-        "tlsPort": 443,
-        "udpPort": 3478,
-        "url": ""
       }
     },
     "Http": {
@@ -2794,106 +2760,9 @@
   },
   "SCT": {
     "Priority": {
-      "53fdaa090eb946b5a1d6cbdeb4f2ef66": {
-        "Events": {
-          "skypecosi_concore_native_callsignalingagent_httprequest": 0
-        }
-      },
       "baca4c4fb3c842318f5c83f97f9553df": {
         "Default": 0
-      },
-      "4878483d51754ff597f58cfe0995ccd4": {
-        "Default": 2,
-        "Events": {
-          "kpi_themes": 0
-        }
-      },
-      "cfw-localdb-events": {
-        "Source": 2,
-        "Events": {
-          "cfw_localdb_connection_opened": 0,
-          "cfw_localdb_connection_closed": 0
-        }
-      },
-      "sct": {
-        "Source": 2,
-        "Events": {
-          "sct_event_stats": 2,
-          "sct_stats": 2
-        }
-      },
-      "SCTStatsSender": {
-        "Source": 0
-      },
-      "Mac": {
-        "Source": 2,
-        "Events": {
-          "mac_851_statsaccounttopupaddcreditstartcall": 2,
-          "mac_853_statsaccounttopupaddcreditduringcall": 2,
-          "mac_855_statsaccounttopupaddcreditonsms": 2,
-          "mac_858_statsaccounttopupaddcreditother": 2,
-          "mac_859_statsaccounttopupwindowfromchatcall": 2,
-          "mac_860_statsaccounttopupwindowfromchatsubscription": 2,
-          "mac_862_statsaccounttopupwindowfromchatsms": 2,
-          "mac_863_statsaccounttopupaddskypecreditselectedfromprofile": 2,
-          "mac_864_statsaccounttopupbuyskypecreditselectedfromhelpmenu": 2,
-          "mac_865_statsaccounttopupwindowbuyselected": 2,
-          "mac_866_statsaccounttopupwindowcancelselected": 2,
-          "mac_867_statsaccounttopupwindowtryagainonlineselected": 2,
-          "mac_statsaccountbuyskypecreditaction": 2,
-          "mac_statsaccounttopupaddcredit": 2,
-          "mac_statsaccounttopupdisplay": 2,
-          "mac_statsaccounttopupskypecreditaction": 2,
-          "mac_statsaccounttopupwindowaction": 2,
-          "mac_statsconversationscontactsending": 2,
-          "mac_statsconversationsfiletransfer": 2
-        }
-      },
-      "mesh_statistics": {
-        "Source": 2,
-        "Events": {
-          "mesh_mesh": 2,
-          "mesh_publish_bitstream": 2,
-          "mesh_publish_properties": 2,
-          "mesh_publish_stream": 2,
-          "mesh_recv_handle": 2,
-          "mesh_send_handle": 2,
-          "mesh_subscribe_bitstream": 2,
-          "mesh_subscribe_stream": 2
-        }
-      },
-      "VF_Agent": {
-        "Source": 2,
-        "Events": {
-          "vf_agent_ua_receiverstats": 2,
-          "vf_agent_ua_receiverstreamstats": 2,
-          "vf_agent_ua_senderstats": 2,
-          "vf_agent_ua_senderstreamstats": 2,
-          "vf_agent_ua_sinkchannelstats": 2,
-          "vf_agent_ua_sinkstats": 2,
-          "vf_agent_ua_sourcechannelstats": 2,
-          "vf_agent_ua_sourcestats": 2
-        }
-      },
-      "RTC": {
-        "Source": 2,
-        "Events": {
-          "rtc_call_connected": 2,
-          "rtc_call_end": 2,
-          "rtc_call_start": 2,
-          "rtc_login_end": 2,
-          "rtc_login_start": 2,
-          "rtc_plugin_end": 2,
-          "rtc_plugin_error": 2,
-          "rtc_plugin_start": 2
-        }
       }
-    },
-    "UseNewSdk": false,
-    "UseNewSdk2": true,
-    "PauseInBackground": false,
-    "SendFrequency": {
-      "act_stats": 3600
     }
   },
   "Segmentation": {
@@ -2909,46 +2778,6 @@
     "Cloud": "Public",
     "AudienceGroup": "general"
   },
-  "SkypeAndroid": {
-    "FeaturesPolicy": {
-      "IfExistsSecsTimeouts": "6,11,16",
-      "IfExistsVersion": "5.0",
-      "isSelfTwoStatePresenceEnabled": {
-        "enabled": false
-      },
-      "FABRunCloudAnimations": {
-        "enabled": false
-      },
-      "GroupChatInvitationsMode": 2,
-      "MessageStatusIndicatorEnabled": {
-        "enabled": true
-      },
-      "MsnpConnectionIndicatorEnabled": {
-        "enabled": true
-      },
-      "MsnpDisconnectedStateEnabled": {
-        "enabled": false
-      },
-      "MsnpConnectingStateEnabled": {
-        "enabled": true
-      },
-      "MsnpConnectedStateEnabled": {
-        "enabled": false
-      },
-      "MsnpUpdatingConversationsEnabled": {
-        "enabled": true
-      },
-      "isUnifiedPresenceEnabled": {
-        "enabled": false
-      },
-      "IsLocationSendingEnabled": {
-        "enabled": true
-      },
-      "IsLocationSharingEnabled": {
-        "enabled": true
-      }
-    }
-  },
   "SkypeAudioLibrary": {
     "UseClockRateForCNSupport": "true",
     "ECS_ADSP_EnableG729": "1",
@@ -2960,7 +2789,6 @@
     "ECS_ADSP_JB_MinDelay_Ms": "20",
     "ECS_ADSP_JB_Delay_Margin_Ms": "60",
     "ECS_ADSP_JB_Symmetric_Delay_Margin_Action": "0",
-    "ECS_HWOffloadWhitelist": "*=0",
     "ECS_ADSP_AH_Disable_PerFrame_CN_Flag": "1"
   },
   "SkypeBilling": {
@@ -2986,52 +2814,62 @@
       "outgoingConversationSetupOperationTimeoutSec": 90,
       "incomingConversationSetupOperationTimeoutSec": 90,
       "callTransfereeOperationTimeout": 60,
-      "udpCanaryTimeoutMs": 2000,
-      "httpTransportRetrialDelayInMs": 500
+      "udpCanaryTimeoutMs": 2000
     },
     "gtcHandshakeSendDelay": "{\"minParticipantThreshold\":100,\"increaseEveryN\":100,\"delayPerN\":6000,\"maxDelay\":60000}",
+    "enableGroupKeyCompressionV1": true,
     "enableCallElevation": true,
+    "useOnActiveCallInitiated": true,
+    "excludeObservingCallInActiveCalls": true,
+    "enableVirtualParticipantMsiMapping": true,
+    "enableVirtualParticipantMsiMappingForSelf": true,
     "disableEventsAfterDisconnected": true,
     "deleteParticipantsAfterDisconnected": true,
     "disableRemoteVideosCountChanged": true,
     "disableResetParticipantCallStateEvents": true,
+    "enableStaging": true,
     "enableOperationIdempotency": true,
     "enableShareVideoWithoutAudio": true,
+    "enableUdpBetterTogetherTransport": true,
     "nativeAdmitRejectionAsTransactionEnd": true,
     "webAdmitRejectionAsTransactionEnd": true,
-    "conversationServiceUrl": "https://api.flightproxy.skype.com/api/v2/cpconv",
-    "callControllerServiceUrl": "https://api3.cc.skype.com",
-    "udpTransportUrl": "udp://api.flightproxy.skype.com:3478",
-    "keyDistributionUrl": "https://api.flightproxy.skype.com/kd",
+    "enableMusicOnHoldV2": true,
+    "enableErrorConversion": true,
     "mcr": {
       "enabled": false,
       "serviceFqdn": "https://api.mcr.skype.com",
       "getMissedCallsUrl": "/clients/v1/users/skype/%destinationId%/missed-calls?anchor=",
       "markReadStatusUrl": "/clients/v1/users/skype/%destinationId%/missed-calls/%anchor%/read-status?value=read"
     },
+    "conversationServiceUrl": "https://api.flightproxy.teams.microsoft.com/api/v2/epconv",
+    "callControllerServiceUrl": "https://api3.cc.skype.com",
+    "overrideDisplayName": true,
+    "useDisplayNameFromAttach": true,
+    "negotiateAppSharingAlwaysForGroupCalls": true,
     "p2pForkDelayInMs": -1,
     "disableForwardingTimerOnClient": true,
-    "pstnContentPayload": true,
-    "udpSignalingFastTimeoutMs": 1500,
-    "udpSignalingRetransmitTimeoutMs": 600,
-    "ngOutgoing": {
-      "isUdpEnabled": true,
-      "isUdpCanaryEnabled": true,
+    "callStoreUrl": "https://api.flightproxy.teams.microsoft.com/api/v2/ep/api.userstore.skype.com/",
+    "sharedLineOptionsUrl": "https://api.flightproxy.teams.microsoft.com/api/v2/ep/api3.cc.skype.com/cc/v1/sharedLineAppearance",
+    "ngIncoming": {
       "isS2SEnabled": true,
       "isGVCEnabled": true,
-      "isVBSSEnabled": true,
       "isPSTNEnabled": true,
+      "isVBSSEnabled": true,
+      "isUdpEnabled": true,
+      "isBrokerEnabled": true,
+      "isUdpCanaryEnabled": true,
       "params": {
 
       }
     },
-    "ngIncoming": {
-      "isUdpEnabled": true,
-      "isUdpCanaryEnabled": true,
+    "ngOutgoing": {
       "isS2SEnabled": true,
       "isGVCEnabled": true,
-      "isVBSSEnabled": true,
       "isPSTNEnabled": true,
+      "isVBSSEnabled": true,
+      "isUdpEnabled": true,
+      "isUdpCanaryEnabled": true,
+      "isBrokerEnabled": true,
       "params": {
 
       }
@@ -3042,32 +2880,20 @@
 
       }
     },
-    "ngSkype2Lync": {
-      "isEnabled": true,
-      "isTransferee": false,
-      "params": {
-
-      }
-    },
-    "LyncInterop": {
-      "DoNotUseABCHSOAP": 1,
-      "EnableForSkypenameLogin": 1,
-      "EnableDualNetworkLogin": 1
-    },
     "EarlyRinging": 3,
-    "mediaConfiguration_TurnTurnFallbackEnabled": "1",
-    "csaCallModalityEventPrioBoost": 1,
-    "allowNgSdgMessagesForGroupCalls": true,
+    "udpSignalingFastTimeoutMs": 1500,
+    "udpSignalingRetransmitTimeoutMs": 600,
+    "udpSignalingRetransmitCount": 2,
     "udpSignalingMaxPacketSize": 1470,
+    "udpTransportUrl": "udp://api.flightproxy.teams.microsoft.com:3478",
+    "keyDistributionUrl": "https://api.flightproxy.teams.microsoft.com/kd",
+    "csaCallModalityEventPrioBoost": 1,
     "cacheTrouterResponses": true,
-    "useCentralizedTrouter": true,
-    "allowCallWithBot": true,
     "autoJoinOnRedirect": true,
-    "maxParticipantsInGvc": 25,
-    "allowHostlessCalls": true
-  },
-  "SkypeCallingT1": {
-    "UnansweredCallUIEnabled": true
+    "enableGroupCallEventMessagesOnService": true,
+    "csaHttpPrioBoost": 1,
+    "csaVideoPrioBoost": 1,
+    "brokerExclusively": false
   },
   "SkypeEngagement": {
     "experiments": {
@@ -3131,34 +2957,30 @@
     }
   },
   "SkypeMediaIntelligence": {
-    "Features": {
-      "Traceroute": {
-        "ConcurrentOperations": 5,
-        "MaxErrorsPerHop": 3,
-        "Enabled": true,
-        "MaxHops": 32,
-        "DestinationHistoryLifetime": 86400,
-        "Timeout": 3000,
-        "DestinationHistorySize": 50,
-        "QueueSize": 50,
-        "FqdnTargets": [
-          {
-            "Hostname": "www.bing.com"
-          },
-          {
-            "Hostname": "13.107.8.20"
-          },
-          {
-            "Hostname": "13.107.8.50"
-          }
-        ]
-      }
-    },
-    "enabled": true,
-    "Enabled": true
+    "enabled": false,
+    "Enabled": false
   },
   "SkypeMediaStack": {
+    "ULLogUpload": {
+      "name": "fecSizeCheck1 #3856344",
+      "conditions": [
+        {
+          "name": "condition #1",
+          "logId": 1528170260,
+          "component": "LMS.VESEND_GENERIC",
+          "level": "ERROR"
+        }
+      ],
+      "experimentTarget": "Native",
+      "filters": [
+        {
+          "component": "LMS.VESEND_GENERIC",
+          "level": "DEBUG6"
+        }
+      ]
+    },
     "RefreshSsrcWebrtcReenabled": "false",
+    "UseEcdsaCertForAllCalls": 1,
     "UseConfE2eeSdpAttribute": "true",
     "ParseXMediaBWConf": 0,
     "RealtimeDataSourceSettings": {
@@ -3169,19 +2991,20 @@
         }
       }
     },
-    "AlwaysResolveIceServerFqdn": false,
     "EnableRemoteUserEvents": true,
     "mediaConfiguration_UseVideoPortRangeWhenBundled": 0
   },
   "SkypePersonalization": {
-    "pes_config": "https://static-asm.secure.skypeassets.com/pes/v1/configs/f41aff4eb895407995f1cb8fa6f3c5e7/views/default"
+    "sticker_config": "https://static-asm.secure.skypeassets.com/pes/v1/configs/ca60783c3484453e81a3c9f9360598bc/views/default",
+    "pes_config": "https://static-asm.secure.skypeassets.com/pes/v1/configs/f41aff4eb895407995f1cb8fa6f3c5e7/views/default",
+    "fxscene_config": "https://static-asm.secure.skypeassets.com/pes/v1/configs/d470e21e4c5847dca9c315b54909ff33/views/default"
   },
   "SkypeRealTimeMedia": {
     "Configurations": {
       "CQF_Trigger": {
-        "S2S_Percent": 10,
-        "PSTN_Percent": 33,
-        "GroupCall_Percent": 10,
+        "S2S_Percent": 30,
+        "PSTN_Percent": 30,
+        "GroupCall_Percent": 30,
         "MinCallDurationSecs": 5,
         "Is_Token_Order_Randomized": 0
       }
@@ -3232,37 +3055,7 @@
       "RMHistogram": 0
     },
     "LyncRm": "on",
-    "AggressiveUKF": true,
-    "AllocationAlgo": 3,
-    "StreamAllocLimits": {
-      "Audio": {
-        "MinAllocBps": 1875,
-        "IncrementBps": 3125
-      }
-    },
-    "ThirdGenAlloc": {
-      "BwLadders": {
-        "FT": [
-          [0, 25],
-          [300, 30]
-        ],
-        "Probe": [
-          [0, 30]
-        ],
-        "Video": [
-          [0, 67],
-          [300, 40]
-        ],
-        "Audio": [
-          [0, 33],
-          [35, 25]
-        ]
-      },
-      "ConcurrentFTs": 0
-    },
-    "EcsConfigTag": {
-      "ALGO": "3RD"
-    }
+    "AggressiveUKF": true
   },
   "SkypeRootTools": {
     "RootTools": {
@@ -3923,182 +3716,21 @@
       "BvdS2S": ""
     }
   },
-  "WIN": {
-    "Features": {
-      "S4LChatReactions": {
-        "Enabled": true
-      },
-      "SaveHistoryToCSV": {
-        "Enabled": true
-      },
-      "CoExistence": {
-        "ShowUWPPromoInUpgrade": true,
-        "UWPPromoNewUsers": {
-          "Enabled": false
-        },
-        "UWPPromoNewUsersAllButtons": {
-          "Enabled": true
-        },
-        "UWPPromo": {
-          "Enabled": false,
-          "Count": 2,
-          "Interval": 14,
-          "Iteration": 1
-        },
-        "UWPPromoAllButtons": {
-          "Enabled": true
-        },
-        "UWP": {
-          "Enabled": true
-        }
-      },
-      "ShowMutualContacts": {
-        "Enabled": true
-      },
-      "Wifi": {
-        "Enabled": false
-      },
-      "UnansweredCallUI": {
-        "KeepOnUnfocus": true,
-        "AutoCloseTimeout": 15
-      },
-      "NativeOAuthLogin": {
-        "Enabled": false
-      },
-      "SoundAlert": {
-        "UseNativePlayer": true,
-        "UseLibPlayer ": false
-      },
-      "CallForwardingNGCOptions": {
-        "Enabled": true
-      },
-      "ThemedMenus": {
-        "Enabled": true
-      },
-      "Swift": {
-        "MediaAutoPlayEnabled": true,
-        "UrlSchemaBlacklist": [
-          "http",
-          "file",
-          "smb"
-        ],
-        "Enabled": true
-      },
-      "GIF": {
-        "Enabled": true
-      },
-      "Geo": {
-        "TW": true,
-        "XK": true
-      },
-      "HideP2PProfileData": {
-        "Enabled": true
-      },
-      "HideP2POptionsData": {
-        "Enabled": true
-      },
-      "ConnectionNotificationBanner": {
-        "Enabled": true
-      },
-      "VideoCropping": {
-        "Enabled": false
-      },
-      "Call": {
-        "SwitchCameras": {
-          "Enabled": true
-        }
-      },
-      "CloudAudioShare": {
-        "Enabled": true,
-        "AllowLegacy": false
-      },
-      "OutOfProcAds": {
-        "Enabled": true
-      },
-      "Agents": {
-        "AtMentions": true,
-        "EnableBotGroupPrivacyMessages": true,
-        "APSServiceURL": "https://api.aps.skype.com/v1/",
-        "AgentsSuggestionsEnabled": true,
-        "NonAPSEnabledBots": "28:concierge 28:concierge_int 28:concierge_df 28:concierge_twoway_df",
-        "SilentAddViaUriEnabled": false
-      },
-      "RestrictSwiftToBotsOnly": {
-        "Enabled": false
-      },
-      "WASAPI": {
-        "Enabled": true
-      },
-      "KPILegacyVideoMessage": {
-        "Enabled": true
-      },
-      "Aria": {
-        "PublicAPI": true,
-        "Tenant": "4878483d51754ff597f58cfe0995ccd4-ee867c9c-71f0-4056-8dd6-822db2c40cb5-7312"
-      },
-      "NewIMModel": {
-        "Enabled": false
-      },
-      "SimplifiedPresence": {
-        "Enabled": false
-      },
-      "ShortCircuit": {
-        "MSARequired": true,
-        "Enabled": false
-      },
-      "CloudVideoShare": {
-        "AlwaysShowIncoming": {
-          "Enabled": true
-        },
-        "Enabled": true
-      },
-      "CloudFileShare": {
-        "AlwaysShowIncoming": {
-          "Enabled": true
-        },
-        "Enabled": true
-      },
-      "Translator": {
-        "Enabled": false
-      },
-      "Fliks": {
-        "Enabled": true
-      },
-      "CloudEmoticons": {
-        "Enabled": true
-      },
-      "Emergency": {
-        "Countries": [
-          "gb",
-          "au",
-          "fi",
-          "dk"
-        ]
-      },
-      "Hololens": {
-        "Enabled": true
-      },
-      "URLPreview": {
-        "Enabled": true
-      },
-      "Spaces": {
-        "CreateShare": {
-          "Enabled": true
-        }
-      },
-      "redial": {
-        "Enabled": false,
-        "ShortCallThreshold": 60
-      },
-      "SkypeHome": {
-        "Enabled": false,
-        "SkypeHomeUrl": "https://apps.skype.com/home"
-      }
-    }
+  "TrouterJScriptClient": {
+    "enabled": false,
+    "trouter_js_client_connected": true,
+    "trouter_js_client_disconnected": true,
+    "trouter_js_client_error": true,
+    "trouter_js_client_progress": true,
+    "trouter_js_client_response": true,
+    "numberOfStepsToMaintain": 20,
+    "logHealthCheckError": false,
+    "sendProgressTimeoutSecs": 55,
+    "logSendPingError": true
   },
   "Headers": {
-    "ETag": "\"HcBdVZe75TUjvjF6oi++qJWifbh996tiWpMwamzqFGU=\"",
-    "Expires": "Thu, 27 Feb 2025 18:41:37 GMT",
+    "ETag": "\"/NxDxtwU7CktEVVQoO3KLDuERbZyLjwK9cam2lcHgpg=\"",
+    "Expires": "Fri, 28 Feb 2025 10:36:53 GMT",
     "CountryCode": "RU",
     "StatusCode": "200"
   },
@@ -4107,23 +3739,21 @@
     "AsyncMediaClient": "P-R-18572-1-6,P-R-17927-25582-2,P-R-17992-25804-5,108902,P-D-4028-19804-21",
     "ClientLogin": "P-D-15373-22035-32",
     "ConsumerEntitlement": "P-R-42155-7-10,P-R-22129-1-10,P-D-22920-4-21,P-D-22449-1-5,P-D-20701-1-22,P-D-20674-1-3,P-D-20673-1-59",
-    "Contacts": "P-D-22001-2-3,P-D-20793-1-9,P-D-14307-25584-6",
     "CQF": "P-D-1003116-1-1,P-D-75995-1-4",
     "DebugabilitySquad": "P-R-22273-1-18,P-D-22621-1-8,P-D-22622-1-6",
     "ECS": "P-R-1097532-1-5,P-R-76663-1-2,P-D-81604-1-2",
-    "ECS_Scorecards_Test": "P-E-1551940-2-3,P-E-1551938-C1-3,P-E-1551933-C1-3,P-E-1551789-2-3,P-E-1441735-2-3",
-    "ECS_Scorecards_Test2": "P-E-31925-2-3",
+    "ECS_Scorecards_Test": "P-E-1551851-2-3,P-E-1551847-C1-3",
     "ECSCONFIG": "P-D-1147099-1-3,P-D-1147088-1-3,P-D-17910-25541-3,112127",
     "ECSTest2": "P-D-1548497-1-2",
     "Join": "P-D-28714-1-6",
     "JoinLauncher": "113355,113356",
     "MDN_MIDDLELANE_TEAMS": "P-D-1009217-19-167",
-    "MDN_TRAP": "P-D-5047-25518-172",
+    "MDN_TRAP": "P-D-5047-25517-172",
     "MDNRAP": "115410",
     "MediaAgent": "P-D-68276-1-2",
     "MicrosoftTeamApprovals": "P-R-1541617-10-10,P-R-1462860-11-6,P-R-1438108-10-8,P-R-1418789-1-3,P-R-1267045-7-10,P-R-1258610-10-8,P-R-1198408-10-16,P-R-1150804-10-17,P-R-1117618-10-28,P-R-1118465-12-18,P-R-1099667-12-14,P-R-1080076-11-17,P-R-1075973-11-28,P-R-1069645-10-30,P-R-1064500-9-15,P-R-1050671-13-22,P-R-1063220-14-19,P-R-1060529-11-29,P-R-1054879-10-9,P-R-1052028-10-35,P-R-1049790-6-18,P-R-1049881-11-17,P-R-1042091-13-65,P-R-1044556-14-16,P-R-1035881-10-11,P-R-1034257-10-17,P-R-1029926-17-13,P-R-1034004-11-17,P-R-1026282-11-15,P-R-1001453-10-18,P-R-1020408-10-10,P-R-1017758-9-16,P-R-1016631-10-15,P-R-1008652-10-10,P-R-1001680-10-27,P-R-1000981-10-25,P-R-115999-12-36,P-R-113719-12-20,P-R-111670-13-19,P-R-110628-10-11,P-R-110483-10-18,P-R-109155-26-21,P-R-106606-14-18,P-R-100554-14-24,P-R-99901-10-13,P-R-98971-10-13,P-R-96172-10-19,P-R-95674-15-45,P-R-94749-9-10,P-R-94224-10-14,P-R-93053-11-11,P-R-90056-10-42,P-R-83888-10-15,P-R-83075-10-14,P-R-82904-12-20,P-R-81622-10-18,P-R-81580-13-25,P-R-77226-13-25,P-R-74994-10-11,P-R-74993-10-21,P-R-74801-10-10,P-R-73793-10-48,P-R-73190-10-9,P-R-69653-11-15,P-R-69035-14-33,P-R-69030-13-17,P-R-68608-10-7,P-R-68937-10-79,P-R-68473-10-4,P-R-65568-10-8,P-R-67490-10-12,P-R-66421-10-66,P-R-63643-1-7,P-R-63120-1-9,P-R-62477-2-4,P-R-62209-14-36,P-D-61939-1-49",
     "MicrosoftTeamLearning": "P-R-1542930-9-6,P-R-1543720-1-3,P-R-1368983-9-11,P-R-1407837-1-5,P-R-1291647-1-6,P-R-1280717-1-5,P-R-1291149-2-3,P-R-1230627-1-5,P-R-1271573-9-11,P-R-1256996-9-10,P-R-1240651-1-52,P-R-1252883-1-7,P-R-1248913-9-3,P-R-1248521-2-3,P-R-1234713-1-8,P-R-1227823-9-5,P-R-1228241-9-3,P-R-1225954-1-8,P-R-1169563-10-6,P-R-1069280-10-2,P-R-1110585-1-6,P-R-1133590-1-8,P-R-1105683-9-18,P-R-1114788-10-6,P-R-1114214-3-7,P-R-1097157-9-13,P-R-1096621-2-3,P-R-1082460-9-15,P-R-1086203-2-5,P-R-1080869-9-11,P-R-1056329-2-4,P-R-1071278-1-5,P-R-1072077-1-4,P-R-1070742-13-5,P-R-1069887-9-3,P-R-1062442-1-5,P-R-1060365-1-7,P-R-1064795-2-2,P-R-1062907-1-4,P-R-1060397-2-7,P-R-1061347-1-7,P-R-1059863-1-2,P-R-1057378-1-13,P-R-1056545-4-5,P-R-1059107-1-4,P-R-1057062-10-7,P-R-1057785-1-3,P-R-1057784-1-3,P-R-1057114-3-3,P-R-1055507-1-3,P-R-1055343-2-3,P-R-1053376-1-3,P-R-1054264-2-9,P-R-1054142-1-3,P-R-1049825-1-10,P-R-1048740-1-11,P-R-1048193-1-3,P-R-1048201-1-4,P-R-1048200-1-3,P-R-1043586-1-14,P-R-1045540-1-3,P-R-1044167-1-2,P-R-1044093-1-4,P-R-1043626-9-11,P-R-1043622-2-9,P-R-1042967-1-6,P-R-1042036-1-3,P-R-1042074-1-2,P-R-1042043-2-10,P-R-1040983-1-2,P-R-1040935-1-15,P-R-1039863-2-7,P-R-1039670-1-4,P-R-1038872-1-5,P-R-1036832-11-8,P-R-1030210-2-5,P-R-1035289-2-18,P-R-1034096-2-3,P-R-1003485-2-3,P-R-1030173-2-5,P-R-1033464-3-19,P-R-114288-1-5,P-R-1028593-12-9,P-R-1030159-2-13,P-R-1016583-1-4,P-R-1027490-10-7,P-R-1026454-1-3,P-R-1026027-1-4,P-R-1022014-1-13,P-R-1023891-10-13,P-R-1023641-1-14,P-R-1023587-1-6,P-R-1023397-1-7,P-R-1020899-1-4,P-R-1019481-1-4,P-R-1020898-1-5,P-R-1020443-10-12,P-R-1020224-1-2,P-R-1019875-1-14,P-R-1010835-12-48,P-R-1015921-2-9,P-R-1008952-5-11,P-R-1015932-10-3,P-R-1015621-1-7,P-R-1015438-10-12,P-R-1010216-10-14,P-R-1010686-1-6,P-R-1005769-7-8,P-R-1007246-2-10,P-R-1007490-10-11,P-R-1002209-1-8,P-R-1006862-10-15,P-R-1006411-1-4,P-R-1005539-10-11,P-R-1006298-1-4,P-R-111981-1-8,P-R-111166-10-18,P-R-1006245-1-3,P-R-1005047-1-17,P-R-1005352-1-2,P-R-1001263-1-9,P-R-1000240-1-12,P-R-1001146-1-5,P-R-1001260-1-3,P-R-1000961-8-6,P-R-1000545-10-6,P-R-115830-1-10,P-R-113445-1-11,P-R-112731-1-4,P-R-118312-1-5,P-R-118233-1-4,P-R-118141-1-5,P-R-117960-8-8,P-R-98775-1-4,P-R-116072-11-14,P-R-116429-1-30,P-R-115818-10-8,P-R-115204-20-19,P-R-115050-6-10,P-R-113164-1-9,P-R-112733-2-6,P-R-112734-1-3,P-R-112013-1-6,P-R-110871-11-16,P-R-110691-1-2,P-R-109956-1-2,P-R-100159-10-4,P-R-109131-1-5,P-R-104379-3-38,P-R-99589-1-2,P-R-99433-6-9,P-R-98164-1-2,P-R-97523-1-7,P-R-93466-2-6,P-R-96673-1-18,P-R-96864-1-18,P-R-96674-1-6,P-R-95139-1-6,P-R-95023-10-15,P-R-94036-14-16,P-R-92567-10-9,P-R-92145-2-6,P-R-91992-2-3,P-R-89656-4-6,P-R-91197-1-15,P-R-91020-2-4,P-R-90887-2-6,P-R-87096-10-10,P-R-86710-2-3,P-R-81198-1-23,P-R-80844-10-20,P-R-79526-10-20,P-R-79519-1-11,P-R-78446-1-16,P-R-74535-10-6,P-R-74090-10-2,P-R-70130-10-22,P-D-1030425-10-1,P-D-1030423-10-1,P-D-115348-10-1",
-    "MicrosoftTeamsClientAndroid": "P-R-1557733-5-3,P-R-1550173-5-14,P-R-1542910-5-13,P-R-1538119-5-14,P-R-1528591-5-2,P-R-1528073-5-22,P-R-1528033-5-2,P-R-1525382-5-3,P-R-1481017-5-20,P-R-1471625-5-4,P-R-1467675-5-17,P-R-1460918-5-15,P-R-1445872-5-19,P-R-1445806-1-8,P-R-1435205-5-10,P-R-1415912-5-22,P-R-1410174-5-22,P-R-1271075-5-11,P-R-1261394-5-12,P-R-1261702-1-3,P-R-1261443-5-17,P-R-1254018-1-3,P-R-1253137-5-12,P-R-1251941-5-26,P-R-1233013-5-27,P-R-1249236-5-30,P-R-1243960-5-24,P-R-1229375-5-16,P-R-1228278-5-20,P-R-1227336-5-6,P-R-1219855-5-17,P-R-1175867-5-13,P-R-1173301-5-11,P-R-1169175-5-22,P-R-1152892-5-14,P-R-1168558-1-3,P-R-1156550-5-25,P-R-1155894-5-13,P-R-1149911-5-13,P-R-1149069-5-6,P-R-1137398-5-18,P-R-1131359-5-26,P-R-1131358-5-12,P-R-1119973-5-14,P-R-1119952-5-13,P-R-1113150-5-17,P-R-1111480-5-13,P-R-1110265-5-13,P-R-1105869-5-27,P-R-1085385-5-22,P-R-1097165-5-27,P-R-1091771-5-17,P-R-1092058-5-15,P-R-1092578-5-20,P-R-1082505-5-22,P-R-1078290-5-11,P-R-1077954-5-22,P-R-1076160-5-12,P-R-1074333-5-14,P-R-1065043-5-11,P-R-1067688-10-26,P-R-1064035-5-10,P-R-1063773-5-13,P-R-1060261-5-13,P-R-1060115-5-23,P-R-1058725-5-24,P-R-1051965-3-31,P-R-1055955-5-13,P-R-1055005-14-43,P-R-1053522-5-16,P-R-1037998-5-21,P-R-1052328-5-13,P-R-1051971-4-27,P-R-1051668-5-15,P-R-1041988-5-23,P-R-1041987-5-22,P-R-1041816-5-22,P-R-1040687-5-15,P-R-1040113-5-19,P-R-1039114-5-12,P-R-1039255-3-7,P-R-1036781-5-18,P-R-1035221-5-16,P-R-1034236-5-20,P-R-1025338-5-14,P-R-1024900-5-23,P-R-1018467-5-24,P-R-1020419-5-3,P-R-1017695-5-13,P-R-1017450-5-14,P-R-1016835-5-23,P-R-1015904-5-16,P-R-1012699-5-12,P-R-1007235-5-23,P-R-1005456-5-14,P-R-117688-5-23,P-R-115104-5-27,P-R-109151-5-17,P-R-105589-5-13,P-R-105586-5-12,P-R-96832-5-25,P-R-97233-5-21,P-R-96413-5-5,P-R-95301-5-18,P-R-93729-5-26,P-R-90476-5-11,P-R-88575-5-16,P-R-86313-5-12,P-R-86131-15-72,P-R-84682-5-10,P-R-82991-5-3,P-R-82309-5-12,P-R-81639-5-14,P-R-80731-5-10,P-R-80480-5-12,P-R-80482-5-13,P-R-76193-5-8,P-R-75897-5-11,P-R-72789-5-12,P-R-72112-5-4,P-R-71912-1-3,P-R-71890-5-10,P-R-62704-1-13,P-R-71063-5-9,P-R-71000-8-21,P-R-70347-6-4,P-R-70164-5-7,P-R-68573-5-9,P-R-67309-5-7,P-R-67308-5-6,P-R-65435-5-4,P-R-65134-1-4,P-R-64358-5-12,P-R-64050-5-8,P-R-63673-5-11,P-R-63659-5-8,P-R-62973-6-21,P-R-58812-5-5,P-R-56684-5-8,P-R-56181-5-8,P-R-39387-29-26,P-R-33066-10-8,P-R-30265-19-24,P-R-25223-9-5,P-R-24803-9-17,P-D-1064776-6-41,P-D-1055476-5-1,P-D-1055383-1-2,P-D-55299-3-3,P-D-20134-1-6",
+    "MicrosoftTeamsClientAndroid": "P-R-1557733-5-3,P-R-1550173-5-14,P-R-1542910-5-13,P-R-1538119-5-14,P-R-1528591-5-2,P-R-1528073-5-22,P-R-1528033-5-2,P-R-1525382-5-3,P-R-1481017-5-21,P-R-1471625-5-4,P-R-1467675-5-17,P-R-1460918-5-15,P-R-1445872-5-19,P-R-1445806-1-8,P-R-1435205-5-10,P-R-1415912-5-22,P-R-1410174-5-22,P-R-1271075-5-11,P-R-1261394-5-12,P-R-1261702-1-3,P-R-1261443-5-17,P-R-1254018-1-3,P-R-1253137-5-12,P-R-1251941-5-26,P-R-1233013-5-27,P-R-1249236-5-30,P-R-1243960-5-24,P-R-1229375-5-16,P-R-1228278-5-20,P-R-1227336-5-6,P-R-1219855-5-17,P-R-1175867-5-13,P-R-1173301-5-11,P-R-1169175-5-22,P-R-1152892-5-14,P-R-1168558-1-3,P-R-1156550-5-25,P-R-1155894-5-13,P-R-1149911-5-13,P-R-1149069-5-6,P-R-1137398-5-18,P-R-1131359-5-26,P-R-1131358-5-12,P-R-1119973-5-14,P-R-1119952-5-13,P-R-1113150-5-17,P-R-1111480-5-13,P-R-1110265-5-13,P-R-1105869-5-27,P-R-1085385-5-22,P-R-1097165-5-27,P-R-1091771-5-17,P-R-1092058-5-15,P-R-1092578-5-20,P-R-1082505-5-22,P-R-1078290-5-11,P-R-1077954-5-22,P-R-1076160-5-12,P-R-1074333-5-14,P-R-1065043-5-11,P-R-1067688-10-26,P-R-1064035-5-10,P-R-1063773-5-13,P-R-1060261-5-13,P-R-1060115-5-23,P-R-1058725-5-24,P-R-1051965-3-31,P-R-1055955-5-13,P-R-1055005-14-43,P-R-1053522-5-16,P-R-1037998-5-21,P-R-1052328-5-13,P-R-1051971-4-27,P-R-1051668-5-15,P-R-1041988-5-23,P-R-1041987-5-22,P-R-1041816-5-22,P-R-1040687-5-15,P-R-1040113-5-19,P-R-1039114-5-12,P-R-1039255-3-7,P-R-1036781-5-18,P-R-1035221-5-16,P-R-1034236-5-20,P-R-1025338-5-14,P-R-1024900-5-23,P-R-1018467-5-24,P-R-1020419-5-3,P-R-1017695-5-13,P-R-1017450-5-14,P-R-1016835-5-23,P-R-1015904-5-16,P-R-1012699-5-12,P-R-1007235-5-23,P-R-1005456-5-14,P-R-117688-5-23,P-R-115104-5-27,P-R-109151-5-17,P-R-105589-5-13,P-R-105586-5-12,P-R-96832-5-25,P-R-97233-5-21,P-R-96413-5-5,P-R-95301-5-18,P-R-93729-5-26,P-R-90476-5-11,P-R-88575-5-16,P-R-86313-5-12,P-R-86131-15-72,P-R-84682-5-10,P-R-82991-5-3,P-R-82309-5-12,P-R-81639-5-14,P-R-80731-5-10,P-R-80480-5-12,P-R-80482-5-13,P-R-76193-5-8,P-R-75897-5-11,P-R-72789-5-12,P-R-72112-5-4,P-R-71912-1-3,P-R-71890-5-10,P-R-62704-1-13,P-R-71063-5-9,P-R-71000-8-21,P-R-70347-6-4,P-R-70164-5-7,P-R-68573-5-9,P-R-67309-5-7,P-R-67308-5-6,P-R-65435-5-4,P-R-65134-1-4,P-R-64358-5-12,P-R-64050-5-8,P-R-63673-5-11,P-R-63659-5-8,P-R-62973-6-21,P-R-58812-5-5,P-R-56684-5-8,P-R-56181-5-8,P-R-39387-29-26,P-R-33066-10-8,P-R-30265-19-24,P-R-25223-9-5,P-R-24803-9-17,P-D-1064776-6-41,P-D-1055476-5-1,P-D-1055383-1-2,P-D-55299-3-3,P-D-20134-1-6",
     "MicrosoftTeamsEcsPrototype": "P-D-25658-1-5",
     "MicrosoftTeamsRetailClients": "P-R-112617-6-3,P-R-112615-6-3,P-R-112539-6-3,P-R-112538-6-3,P-R-112637-7-3,P-R-112632-6-3,P-R-112613-7-9,P-R-110718-7-12,P-R-96942-1-6,P-R-96082-5-8,P-R-90632-10-6,P-R-86977-13-8,P-R-82747-10-3,P-R-80501-5-25,P-R-79683-10-4,P-D-47240-6-99",
     "MicrosoftTeamsRetailIOSClients": "P-R-1028543-6-9,P-R-1026713-5-27,P-R-89254-5-8,P-R-79956-1-3,P-D-69244-1-54",
@@ -4153,22 +3783,20 @@
     "S4L_Search": "P-R-27633-1-15,P-D-22650-1-19",
     "S4L_SISU": "P-D-35727-1-2",
     "S4L_UI": "P-R-47000-2-5,P-R-37324-7-6,P-R-26606-8-15,P-R-24630-1-3",
-    "SCT": "P-R-54035-7-8,P-D-68121-1-2,P-D-22665-1-5,P-D-20968-6-13,P-D-1025-4070-4",
+    "SCT": "P-D-68121-1-2",
     "Segmentation": "P-R-1286778-1-5,P-R-1286723-10-5,P-R-1086013-1-5,P-R-1085750-2-3,P-R-1057929-1-2,P-R-1057621-1-6,P-R-1050900-1-8,P-R-1040659-1-2,P-R-79661-1-28,P-R-25076-1-9,P-R-21476-3747236-1",
-    "SkypeAndroid": "P-R-19524-1-8,P-R-19498-2-6,P-R-18743-1-3,P-R-18040-25897-4,110614,109342,P-R-16501-23354-4,P-R-15475-22297-4,107921,103284",
-    "SkypeAudioLibrary": "P-R-1034141-2-19,P-R-1016281-9-33,P-R-15396-22088-2,P-D-1064615-1-6,P-D-49739-1-8,P-D-22453-1-5,P-D-22193-1-5,P-D-19915-1-10,P-D-19527-1-1,P-D-19507-1-9",
+    "SkypeAudioLibrary": "P-R-1034141-2-19,P-R-1016281-9-33,P-R-15396-22088-2,P-D-1064615-1-6,P-D-49739-1-8,P-D-22453-1-5,P-D-22193-1-5,P-D-19915-1-10,P-D-19507-1-9",
     "SkypeBilling": "117294",
-    "SkypeCalling": "P-R-1289842-6-14,P-R-1221136-8-19,P-R-1099522-6-8,P-R-1083284-6-16,P-R-1056437-6-9,P-R-1056435-6-10,P-R-1053985-13-19,P-R-75937-8-8,P-R-70853-1-3,P-R-67550-8-10,P-R-54941-17-48,P-R-53880-7-7,P-D-22705-1-3,P-D-21727-1-5,P-D-20548-1-9,P-D-19340-1-3,P-D-12240-26181-27",
-    "SkypeCallingT1": "P-D-19602-2-2",
+    "SkypeCalling": "P-R-1289842-6-14,P-R-1221136-8-19,P-R-1128832-6-7,P-R-1099522-6-8,P-R-1093688-8-17,P-R-1092487-6-7,P-R-1083284-6-16,P-R-1056437-6-9,P-R-1056435-6-10,P-R-1053985-13-19,P-R-86497-7-6,P-R-85542-7-6,P-R-75937-8-8,P-R-70853-1-3,P-R-70331-6-7,P-R-67550-8-10,P-R-60708-6-11,P-R-58134-7-25,P-R-53880-7-7,P-R-52163-16-179,P-D-1018002-6-7,P-D-46397-7-4,P-D-24792-1-4,P-D-22705-1-3,P-D-21727-1-5,P-D-20049-13-68,P-D-19340-1-3",
     "SkypeEngagement": "P-E-1560169-4-5,P-E-1547863-4-8,P-E-1469862-4-8,P-E-1449303-4-4,P-E-1433137-4-4,P-E-1307483-4-4,P-E-1265651-4-4,P-E-1256045-4-8,P-E-1232637-4-4,P-E-1198707-4-4,P-E-1148238-4-4,P-E-1148150-7-8,P-E-1132772-4-4,P-E-1115813-2-3,P-E-1069305-4-7,P-E-1025583-4-6,P-E-1003063-4-8,P-E-25239-2-9,P-E-48381-7-28,P-E-37870-3-6,P-E-37760-4-10,P-E-37860-4-12,P-E-28812-2-6,P-E-24158-4-21,P-E-37351-6-15,P-E-37292-6-20,P-E-37085-4-7,P-E-37016-4-9,P-E-31909-2-12,P-E-31552-2-8,P-E-27352-2-7,P-E-27377-2-13,P-E-23771-4-32,P-E-23585-4-15,P-D-22627-1-8",
     "SkypeFeedbackAndSupport": "P-D-24646-1-2",
     "SkypeiOS": "P-R-18991-1-7,P-R-18646-3-7",
     "SkypeM2": "P-R-25599-2-6,P-R-22835-2-4,P-R-22448-1-8",
-    "SkypeMediaIntelligence": "P-E-17635-24755-5,123756",
-    "SkypeMediaStack": "P-R-1416126-2-6,P-R-1049939-2-21,P-R-109412-1-6,P-R-70730-1-3,P-R-53631-7-5,P-R-48447-9-13,P-D-51815-1-3",
-    "SkypePersonalization": "P-R-22478-4-134,P-R-22477-4-136,109919",
-    "SkypeRealTimeMedia": "P-D-20895-1-2",
-    "SkypeResourceManager": "P-R-1238808-1-2,P-R-1167237-1-2,P-R-1120180-1-2,P-R-1120177-1-2,P-R-1105156-1-3,P-R-1097424-1-2,P-R-99795-1-3,P-R-69481-1-3,P-R-26444-1-14,P-D-1291420-1-4,115685,P-D-15348-21989-16,P-D-12245-18745-2,P-D-12244-18744-3",
+    "SkypeMediaIntelligence": "123763",
+    "SkypeMediaStack": "P-R-1438353-1-3,P-R-1416126-2-6,P-R-1220460-6-15,P-R-1049939-2-21,P-R-109412-1-6,P-R-70730-1-3,P-R-48447-9-13,P-D-51815-1-3",
+    "SkypePersonalization": "P-R-22477-7-136,109919",
+    "SkypeRealTimeMedia": "P-R-22389-1-6,P-D-20895-1-2",
+    "SkypeResourceManager": "P-R-1238808-1-2,P-R-1167237-1-2,P-R-1120180-1-2,P-R-1120177-1-2,P-R-1105156-1-3,P-R-1097424-1-2,P-R-99795-1-3,P-R-69481-1-3,P-R-26444-1-14,P-D-1291420-1-4,115685,P-D-15348-21989-16,P-D-12245-18745-2",
     "SkypeRootTools": "P-R-1096188-6-11,P-R-1054277-10-14,P-R-36813-1-10",
     "SkypeTeamsClientIOS": "P-R-1539911-9-15,P-R-1437029-5-24,P-R-1435588-5-22,P-R-1414609-5-24,P-R-1292823-5-18,P-R-1282336-5-21,P-R-1282201-5-12,P-R-1266358-5-12,P-R-1265473-5-18,P-R-1261907-5-12,P-R-1259473-5-13,P-R-1257371-5-19,P-R-1250826-5-20,P-R-1248380-5-14,P-R-1248379-5-13,P-R-1243880-5-32,P-R-1238934-5-17,P-R-1233576-5-22,P-R-1175708-5-16,P-R-1159472-5-15,P-R-1157321-5-18,P-R-1149913-5-15,P-R-1138917-5-13,P-R-1131363-5-24,P-R-1129262-5-12,P-R-1119033-5-12,P-R-1114502-5-17,P-R-1113926-5-14,P-R-1109893-5-27,P-R-1105159-5-14,P-R-1097591-5-15,P-R-1089315-5-29,P-R-1081864-5-18,P-R-1080888-5-12,P-R-1064481-5-13,P-R-1068950-5-14,P-R-1061311-5-13,P-R-1058737-5-21,P-R-1051964-3-31,P-R-1050130-11-37,P-R-1056588-5-14,P-R-1055308-5-14,P-R-1045006-5-27,P-R-1052307-5-15,P-R-1045751-5-17,P-R-1044105-5-13,P-R-1037296-5-14,P-R-1036765-5-23,P-R-1039115-12-19,P-R-1035217-5-13,P-R-1034234-5-22,P-R-1033272-5-22,P-R-1029609-5-3,P-R-1029607-5-12,P-R-1028272-5-9,P-R-1027703-5-12,P-R-1026052-5-22,P-R-1023869-5-22,P-R-1022049-5-26,P-R-1020119-5-21,P-R-1015910-5-15,P-R-1017451-5-16,P-R-1017443-5-15,P-R-1011769-5-17,P-R-1012430-5-19,P-R-1011105-5-13,P-R-1008964-5-13,P-R-1007008-5-17,P-R-1006280-5-28,P-R-1005845-5-30,P-R-117236-5-12,P-R-117281-5-18,P-R-117647-5-23,P-R-116240-5-16,P-R-113097-5-19,P-R-111360-5-14,P-R-110687-5-18,P-R-99237-5-13,P-R-98409-5-5,P-R-95702-5-11,P-R-95709-5-6,P-R-95705-5-5,P-R-96585-5-14,P-R-94973-5-26,P-R-93295-5-10,P-R-86015-5-9,P-R-83172-5-20,P-R-84413-5-13,P-R-80481-5-12,P-R-80483-5-13,P-R-76335-5-5,P-R-75749-5-11,P-R-72223-5-3,P-R-71972-5-4,P-R-71066-5-8,P-R-69724-5-7,P-R-69171-5-6,P-R-67866-5-12,P-R-61972-5-11,P-R-66489-5-11,P-R-62072-5-13,P-R-61810-5-10,P-R-60479-5-12,P-R-58848-5-8,P-R-58811-5-6,P-R-58645-5-26,P-R-56685-5-8,P-R-56182-5-5,P-R-44939-10-8,P-R-37369-10-23,P-D-1064029-5-20,P-D-55630-1-3",
     "SkypeTelemetry": "P-D-19145-1-20",
@@ -4186,7 +3814,7 @@
     "TeamsFLWIOSProd": "P-R-46708-9-3",
     "TeamsVerticalsTelehealth": "P-D-40683-1-23",
     "TestJsonFormatter": "P-D-60734-1-8",
-    "WIN": "P-R-21641-1-7,P-R-21169-1-3,P-R-21170-1-4,P-R-21130-1-3,P-R-21081-1-3,P-R-20975-1-4,P-R-20827-4-10,P-R-20599-2-3,P-R-20559-2-5,P-R-20222-2-4,P-R-20197-2-7,P-R-19850-2-9,P-R-19884-1-4,P-R-19757-1-6,P-R-19707-1-4,P-R-18801-2-7,P-R-18802-1-7,P-R-18155-26242-39,P-R-19139-1-5,P-R-19244-1-3,P-R-19142-3-4,P-R-18957-2-9,P-R-18949-3-5,P-R-19062-4-9,P-R-17870-25425-9,P-R-18745-3-11,P-R-17851-25382-12,P-R-18346-1-4,P-R-18156-26243-3,P-R-17782-25180-23,122899,120664,119564,119563,115535,112575,P-R-17651-24808-6,P-R-17639-24770-15,P-R-17608-25589-6,108915,P-R-17574-24581-3,108911,P-R-17528-24437-7,P-R-15408-22131-2,102143,102080,P-D-19393-1-3,P-D-19140-1-1,P-D-18355-1-4,P-D-17802-25234-2,115131,115128,122586"
+    "TrouterJScriptClient": "P-D-19873-1-17"
   },
   "EventToConfigIdsMapping": {
     "SkypeVideoLibrary": {
